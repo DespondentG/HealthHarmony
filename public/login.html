@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+
+      const email = form.elements.email.value;
+      const password = form.elements.password.value;
+
+      const response = await fetch('http://localhost:3000/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+  },
+        body: JSON.stringify({ email, password })
+      });
+
+      if (response.ok) {
+        console.log('Login successful');
+        // Redirect or show success message here
+        window.location.replace('/index.html');
+
+      } else {
+        console.error('Login failed');
+        // Handle error here
+      }
+    });
+  });
+  </script>
+
+
+
+
+
+</head>
+<body>
+  <div class="wrapper">
+    <form>
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="email" placeholder="Email" name="email" required>
+        <i class='bx bxs-envelope'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" name="password" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="forget.html">Forgot Password</a>
+      </div>
+      <a href="index.html"><button class="btn">Login</button></a>
+      <div class="register-link">
+        <p>Don't have an account? <a href="signup.html">Register</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

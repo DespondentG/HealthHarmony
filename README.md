@@ -91,34 +91,12 @@ User Engagement: The project may prioritize user engagement through features lik
 Integration with Devices: It could integrate with wearable devices or sensors to gather real-time health data for a more accurate assessment.
 Data Privacy and Security: Given the sensitive nature of health data, the project likely emphasizes robust security measures and data privacy protocols.
 
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `DespondentG`, `HealthHarmony`, `twitter_handle`, `prashant-n-063414213`, `gmail`, `prash.nigam20`, `project_title`, `project_description`
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -131,19 +109,24 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/DespondentG/HealthHarmony.git
    ```
-3. Install NPM packages
+2. Install NPM packages
    ```sh
-   npm install
+   npm install express
+   npm install body-parser
+   npm install cors
+   npm install mongoose
+   npm install bcrypt
    ```
-4. Enter your API in `config.js`
+3. Run the node.js server by opening a cmd/Terminal window in the "public folder" and run `server.js`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   node server.js
    ```
+4. Run the Website and explore the various different tracks and features!
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,9 +135,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+This is a project that can be used and implemented in places where users find it difficult to stay motivated and dedicated to the cause of bettering their own health.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -163,10 +144,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Computer Vision and ML guided Exercise
+- [ ] AI Diet Chart Planner
+- [ ] Health Diagnosis
 
 See the [open issues](https://github.com/DespondentG/HealthHarmony/issues) for a full list of proposed features (and known issues).
 
@@ -208,16 +188,6 @@ Prashant Nigam - prash.nigam20@gmail.com
 
 Project Link: [https://github.com/DespondentG/HealthHarmony](https://github.com/DespondentG/HealthHarmony)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -256,6 +226,5 @@ Project Link: [https://github.com/DespondentG/HealthHarmony](https://github.com/
 [JQuery-url]: https://jquery.com 
 [HTML-url]: https://qph.cf2.quoracdn.net/main-qimg-1a68d0e30e4cd360db765e1e9718b5c1
 [css-url]:  https://opspl.com/wp-content/uploads/2023/10/logo-2582747_1280.png
-[nodejs-url] : https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png
 
 
